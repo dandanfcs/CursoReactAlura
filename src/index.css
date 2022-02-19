@@ -6,11 +6,24 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+form{
+    margin-bottom: 10px;
+}
 ul{
     list-style: none;
+    padding: 2px;
+}
+ul li{
+    background: white;
+    color: black;
+    padding: 10PX;
+    margin-top: 6px;
+    box-shadow: 3px 3px 3px #222;
+    border-radius: 2px;
+    border: none;
 }
 span {
-    font-weight: 400;
+    font-weight: bold;
     font-size: 18px;
 }
 

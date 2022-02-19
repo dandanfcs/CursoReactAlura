@@ -13,13 +13,14 @@ class Main extends Component {
     }
 
     AdicionarTarefa(Tarefa){
-        console.log("Adicionando na lista: " + Tarefa);
+     
         const novaTarefa = Tarefa;
         const novoArrayDeTarefas = [...this.state.tarefas, novaTarefa];
         const novoEstado = {
             tarefas:novoArrayDeTarefas
         };
         this.setState(novoEstado);
+        Tarefa = ''
     }
 
     render() {

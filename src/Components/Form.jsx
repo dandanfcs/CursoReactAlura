@@ -10,6 +10,8 @@ class Form extends Component {
         event.preventDefault();
         event.stopPropagation();
         this.props.AdicionarTarefa(this.Tarefa);
+        
+       document.getElementById('inputText').value = ''
   }
 
     HandlerTarefa(event){
@@ -25,7 +27,7 @@ class Form extends Component {
                 <div><h1> TODO LIST </h1></div>
                 <div>
                     <form>
-                        <input type="text" placeholder="adicionar tarefa na lista"
+                        <input type="text" id="inputText" placeholder="adicionar tarefa na lista"
                         onChange={this.HandlerTarefa.bind(this)}></input>
                         <button onClick={this._adicionarTarefa.bind(this)} >Adicionar</button>
                     </form>

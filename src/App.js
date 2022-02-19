@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
         <Main></Main>     
-        <Clientes></Clientes>
+       
     </div>
   );
 }
-
+// <!--Clientes></Clientes-->
 export default App;

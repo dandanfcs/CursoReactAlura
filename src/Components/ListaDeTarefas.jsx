@@ -8,7 +8,6 @@ class ListaDeTarefas extends Component {
           {this.props.tarefas.map((tarefas, index) => {
             return (
               <li key={index}>
-                  {console.log("!"+this.props.tarefas)}
                <span>{this.props.tarefas}</span>
               </li>
             );
